@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savor Station</title>
+    <link rel="stylesheet" href="Home Css.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html">Savor Station</a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About Us.html">About Us and Gallery</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact us & Testimonials</a></li>
+        </ul>
+        <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div>
+            <h1>Savor Station</h1>
+            <p>Fine Dining Experience</p>
+            <button class="button">Make a Reservation</button>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>Our Story</h2>
+            <div class="about-grid">
+                <div>
+                    <a href="https://ibb.co/vV7nq57"><img src="https://i.ibb.co/GnKSpwK/About.jpg" alt="Restaurant Interior" style="width: 100%; border-radius: 8px;"></a>
+                </div>
+                <div>
+                    <p>Experience a journey of flavors from around the world, right here at Savor Station. Our culinary story blends tradition with innovation, bringing you authentic dishes from mouth watering western cultures to spicy eastern cultures in a warm, inviting atmosphere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <div class="container">
+            <h2>Featured Menu</h2>
+            <div class="menu-grid">
+                <!-- Menu Item 1 -->
+                <div class="menu-item">
+                    <a href="https://ibb.co/9gKm1fp"><img src="https://i.ibb.co/8svnfRm/Hoem.jpg" alt="Dish 1"></a>
+                    <div class="menu-item-content">
+                        <h3>Signature Dish</h3>
+                        <p>Signature Fettuccine Pasta Creamy, smooth, and perfectly cooked fettuccine tossed in a luscious garlic Alfredo sauce, topped with fresh parsley and a sprinkle of parmesan. A comfort dish that brings Italian flavors right to your plate.</p>
+                        <p class="menu-price">$24.99</p>
+                    </div>
+                </div>
+                <!-- Menu Item 2 -->
+                <div class="menu-item">
+                    <a href="https://ibb.co/gShGtTN"><img src="https://i.ibb.co/ZB73c85/Fruit-tart.jpg" alt="Dish 2"></a>
+                    <div class="menu-item-content">
+                        <h3>Chef's Special</h3>
+                        <p>Assorted Fruit Tart – A buttery, golden crust filled with velvety vanilla custard, topped with a vibrant array of fresh seasonal fruits. Each bite is a perfect harmony of creamy, fruity, and crisp textures, bringing a delightful burst of flavor!</p>
+                        <p class="menu-price">$29.99</p>
+                    </div>
+                </div>
+                <!-- Menu Item 3 -->
+                <div class="menu-item">
+                    <a href="https://ibb.co/Wvyfftj"><img src="https://i.ibb.co/60PFFBL/Tropical.jpg"s alt="Dish 3"></a>
+                    <div class="menu-item-content">
+                        <h3>Popular Choice</h3>
+                        <p>Pomegranate Rosemary Mezcal Margarita Smoky mezcal meets tangy pomegranate juice, balanced with a hint of fresh rosemary and a splash of lime. This cocktail is a refreshing twist with bold flavors and a touch of herbal elegance – perfect for a unique sipping experience!</p>
+                        <p class="menu-price">$19.99</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <button class="button">View Full Menu</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation">
+        <div class="container">
+            <h2>Make a Reservation</h2>
+            <form>
+                <input type="text" placeholder="Name" class="form-input">
+                <input type="email" placeholder="Email" class="form-input">
+                <input type="tel" placeholder="Phone" class="form-input">
+                <input type="date" class="form-input">
+                <select class="form-input">
+                    <option>Select Time</option>
+                    <option>6:00 PM</option>
+                    <option>7:00 PM</option>
+                    <option>8:00 PM</option>
+                    <option>9:00 PM</option>
+                </select>
+                <button type="submit" class="button">Book Table</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <h2>Hours & Location</h2>
+                    <div>
+                        <h3>Address:</h3>
+                        <p>123 Restaurant Street<br>City, State 12345</p>
+                    </div>
+                    <div style="margin-top: 2rem;">
+                        <h3>Hours:</h3>
+                        <p>
+                            Monday - Thursday: 5:00 PM - 10:00 PM<br>
+                            Friday - Saturday: 5:00 PM - 11:00 PM<br>
+                            Sunday: 4:00 PM - 9:00 PM
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                    <p>
+                        Phone: (555) 123-4567<br>
+                        Email: info@yourrestaurant.com
+                    </p>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- Testimonials Section -->
+	<section class="testimonials">
+		<div class="container">
+			<h2>What Our Customers Say</h2>
+        <div class="testimonial-grid">
+            <!-- Testimonial 1 -->
+        <div class="testimonial">
+            <img src="Images\Testi.jpg" alt="Customer 1">
+            <blockquote>"Amazing food and excellent service! Can't wait to come back!"</blockquote>
+            <p>- John Doe</p>
+        </div>
+            <!-- Testimonial 2 -->
+        <div class="testimonial">
+            <img src="Images/Testimo.jpg" alt="Customer 2">
+            <blockquote>"The atmosphere and flavors are just outstanding. Highly recommended!"</blockquote>
+            <p>- Sarah Lee</p>
+        </div>
+            <!-- Testimonial 3 -->
+        <div class="testimonial">
+            <img src="Images/Testimonial.jpg" alt="Customer 3">
+            <blockquote>"A unique dining experience! Every dish was a delight."</blockquote>
+            <p>- Alex Brown</p>
+        </div>
+        </div>
+		</div>
+	</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Restaurant Name. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Toggle -->
+    <script>
+    function toggleMenu() {
+        const navbarLinks = document.querySelector('.navbar-links');
+        navbarLinks.classList.toggle('active');
+    }
+    </script>
+
+</body>
+</html>

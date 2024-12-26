@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Testimonials - Your Restaurant Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact css.css">
+</head>
+<body>
+	<!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html">Savor Station</a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About Us.html">About Us and Gallery</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact us & Testimonials</a></li>
+        </ul>
+        <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+    <!-- Page Header -->
+    <header class="page-header">
+        <div>
+            <h1>Contact & Testimonials</h1>
+            <p>We'd Love to Hear From You</p>
+        </div>
+    </header>
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <h2>Customer Testimonials</h2>
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <a href="https://imgbb.com/"><img src="https://i.ibb.co/6NJKRSQ/monial.jpg" alt="Customer 1" class="testimonial-avatar"></a>
+                        <div class="testimonial-info">
+                            <h3>John Doe</h3>
+                            <div class="testimonial-date">October 15, 2024</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Amazing dining experience! The food was exceptional and the service was impeccable. 
+                        Will definitely be coming back!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <a href="https://imgbb.com/"><img src="https://i.ibb.co/Wn85smm/testi.jpg" alt="Customer 2" class="testimonial-avatar"></a>
+                        <div class="testimonial-info">
+                            <h3>Jane Smith</h3>
+                            <div class="testimonial-date">October 10, 2024</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "The atmosphere is charming and the food is delicious. Perfect place for special occasions!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <a href="https://imgbb.com/"><img src="https://i.ibb.co/k175mT8/testimo.jpg" alt="Customer 3" class="testimonial-avatar"></a>
+                        <div class="testimonial-info">
+                            <h3>Mike Johnson</h3>
+                            <div class="testimonial-date">October 5, 2024</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">
+                        "Great variety in the menu and everything we tried was fantastic. The staff was very friendly and attentive."
+                    </p>
+                </div>
+            </div>
+        </section>
+		<main class="container">
+        <!-- Contact Form Section -->
+        <section class="contact-section">
+            <div class="form-container">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label class="form-label required">Full Name</label>
+                        <input type="text" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label required">Age</label>
+                        <input type="number" class="form-input" min="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label required">Birthdate</label>
+                        <input type="date" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label required">Gender</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="male" required>
+                                Male
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="female">
+                                Female
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="other">
+                                Other
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label required">Email</label>
+                        <input type="email" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label required">Contact Number</label>
+                        <input type="tel" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Preferred Contact Methods</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contact_method" value="email">
+                                Email
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contact_method" value="call">
+                                Call
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contact_method" value="text">
+                                Text
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label required">Your Message</label>
+                        <textarea class="form-input" required></textarea>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="reset" class="button button-reset">Reset</button>
+                        <button type="submit" class="button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

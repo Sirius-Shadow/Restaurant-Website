@@ -1,0 +1,209 @@
+/* Contact and Testimonials Page Specific Styles */
+.page-header {
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('https://i.ibb.co/FBFfFnz/head.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 15px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; /* Ensures the navbar is on top of the hero section */
+}
+
+.navbar-logo a {
+  font-size: 1.5rem;
+  color: #000; /* Dark text color for visibility on semi-transparent background */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  color: #000; /* Dark text color for visibility on semi-transparent background */
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.navbar-links a:hover {
+  background-color: #f3f4f6;
+}
+
+/* Form Styles */
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #d97706;
+    box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.1);
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.radio-label, .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+textarea.form-input {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.button-reset {
+    background-color: #6b7280;
+}
+
+.button-reset:hover {
+    background-color: #4b5563;
+}
+
+/* Testimonials Section */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 968px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.testimonial-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: left;
+}
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-info h3 {
+    margin: 0;
+    color: #1f2937;
+}
+
+.testimonial-date {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.testimonial-rating {
+    color: #fbbf24;
+    margin: 1rem 0;
+}
+
+.testimonial-text {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* Form Success Message */
+.success-message {
+    background-color: #10b981;
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.success-message.show {
+    display: block;
+}
+
+/* Required Field Indicator */
+.required::after {
+    content: "*";
+    color: #ef4444;
+    margin-left: 0.25rem;
+}
